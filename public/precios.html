@@ -13,7 +13,11 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="index.html#codacle-intro">Codacle</a></li>
+                    <li><a href="index.html#otros-servicios">Otros Servicios</a></li>
+                    <li><a href="index.html#clientes">Clientes</a></li>
+                    <li><a href="index.html#sobre-nosotros">Sobre Nosotros</a></li>
+                    <li><a href="index.html#contactenos">Contáctenos</a></li>
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
@@ -21,42 +25,140 @@
     </header>
 
     <main class="container page-content">
-        <h1>Precios - Codacle Migration Service</h1>
-        <p>Nuestra estructura de precios (*) es simple y directa. Sin costos ocultos. Ofrecemos una garantía de devolución de dinero si la aplicación migrada no coincide con la funcionalidad exacta de la aplicación Delphi original.</p>
+        <h1>Codacle Migration Service</h1>
+
+        <section class="pricing-section">
+            <h2>Descripción del Servicio</h2>
+            <p>Codacle de BotMan AI es un servicio revolucionario diseñado para modernizar aplicaciones legacy de Delphi y Visual Basic de manera eficiente, migrándolas a una arquitectura moderna con backend Spring Boot y frontend React por defecto, u otros stacks tecnológicos bajo petición. Aprovechamos tecnologías de IA generativa de vanguardia para reducir drásticamente el tiempo, esfuerzo y costos de migración.</p>
+            <p>Nuestro enfoque propietario de IA generativa analiza minuciosamente el contexto de su aplicación legacy, permitiéndonos diseñar una solución moderna completamente funcional, mantenible y segura que replica las funcionalidades de su aplicación original con precisión.</p>
+        </section>
+
+        <section class="pricing-section">
+            <h2>Por qué Elegirnos</h2>
+            <p>Actualmente existen dos tipos de servicios de migración automática en el mercado:</p>
+            
+            <h3>Deterministas</h3>
+            <p>Estos servicios no migran el 100% de su código y no rediseñan la arquitectura de su sistema. En cambio, migran piezas de código una por una y requieren ajustes posteriores.</p>
+            
+            <h3>Basados en IA Generativa con sistemas multi-agente</h3>
+            <p>Estos sistemas dependen de múltiples agentes de IA que intentan coordinarse entre sí. Pueden migrar hasta el 80% de su código. El problema es que usted no sabrá qué 20% falta. Por lo general, encontrará código duplicado y faltante. Siguen siendo un buen punto de partida, pero hay trabajo arduo por hacer después del proceso de migración.</p>
+            
+            <h3>Nuestro Enfoque</h3>
+            <p>Combinamos ingeniería profunda con IA Generativa. Comenzamos creando un grafo altamente detallado que representa cada elemento de su software (módulos, funciones, procedimientos, clases, etc.) y base de datos (tablas, procedimientos almacenados, funciones, vistas, etc.) y todas las relaciones entre esos elementos (funciones que llaman a procedimientos, objetos globales en uso, procedimientos que leen o escriben tablas, etc.).</p>
+            <p>A partir de ahí, tenemos un pipeline de más de 60 pasos que crean APIs de backend y luego formularios de frontend, conectando los formularios a las APIs para reproducir la funcionalidad. Estos pasos son deterministas en lo que hacen y cómo lo hacen, pero dependen de la IA Generativa para producir cada pieza de código. El grafo proporciona exactamente el contexto adecuado para cada pequeño paso.</p>
+            <p>Por ejemplo, para crear un endpoint para una API recién creada, el sistema recopilará del grafo los métodos, procedimientos y tablas exactos con las descripciones generadas por IA y sus relaciones, para dar al LLM el contexto adecuado que necesita, ni más ni menos. Posteriormente, agentes adicionales revisarán el código, lo corregirán o mejorarán si es necesario, asegurarán que se cumplan los estándares del cliente y verificarán que el endpoint encaje perfectamente en el panorama general.</p>
+        </section>
+
+        <section class="pricing-section">
+            <h2>Qué Incluye el Servicio</h2>
+            <ul class="service-features">
+                <li><strong>Análisis Inteligente:</strong> Generación de un grafo de conocimiento detallado a partir de su código legacy para capturar las relaciones entre procedimientos, funciones, tablas y bases de datos.</li>
+                <li><strong>Diseño de Arquitectura Moderna:</strong> Establecimiento de una nueva arquitectura de microservicios, incluidas las APIs.</li>
+                <li><strong>Generación Automatizada de Código Backend:</strong> Implementación de backend en Spring Boot, que cubre controladores, servicios, entidades y repositorios. Se pueden solicitar otras tecnologías de backend bajo demanda.</li>
+                <li><strong>Diseño y Generación de Frontend:</strong> Creación de interfaces de usuario basadas en React que reflejan las pantallas e interacciones de la aplicación original. Se pueden solicitar otras tecnologías de frontend bajo demanda.</li>
+                <li><strong>Validación Humana Continua:</strong> Revisiones lideradas por expertos, ajustes y validaciones con nuestro Cliente durante todo el proceso de migración.</li>
+                <li><strong>Pruebas Asistidas por IA:</strong> Generación y ejecución automatizada de pruebas unitarias. Ejecución de pruebas funcionales para garantizar una replicación precisa de la funcionalidad.</li>
+            </ul>
+            <p>Además, nuestra estructura de grafo puede identificar código fuente muerto y así evitar migrarlo.</p>
+        </section>
+
+        <section class="pricing-section">
+            <h2>Opcionales</h2>
+            <p>Acceso mensual a nuestro agente virtual, Barbara, quien puede responder preguntas técnicas y funcionales sobre su código fuente al recorrer el grafo donde representamos cada parte de su software y sus conexiones. También podemos proporcionar al agente acceso a un grafo de su código objetivo, para facilitar la aplicación de cambios futuros. Además, podemos integrar este agente en el IDE de sus desarrolladores siempre que admitan MCP (por ejemplo, Visual Studio Code o Cursor).</p>
+        </section>
+
+        <section class="pricing-section">
+            <h2>Entregables</h2>
+            <ul>
+                <li>Código migrado que cumple con los estándares del cliente.</li>
+                <li>Archivos README y Swagger para APIs.</li>
+                <li>Pruebas unitarias con al menos 80% de cobertura en promedio.</li>
+                <li>Evidencia de resultados de pruebas unitarias y pruebas funcionales (*).</li>
+            </ul>
+            <p>Se pueden incluir entregables adicionales con costo extra.</p>
+            <p>(*) Los scripts y datos de pruebas funcionales deben ser proporcionados por el Cliente. Alternativamente, el cliente puede realizar estas pruebas e informar cualquier problema.</p>
+        </section>
 
         <section class="pricing-section">
             <h2>Estructura de Precios</h2>
+            <p>Nuestra estructura de precios (*) es simple y directa. Sin costos ocultos. Ofrecemos una garantía de devolución de dinero si la aplicación migrada no coincide con la funcionalidad exacta de la aplicación Delphi original.</p>
             <ul>
                 <li><strong>Precio Fijo Único de Engagement y Configuración:</strong> USD 15,000</li>
-                <li><strong>Precio por Formulario:</strong> USD 1,000 por formulario migrado de Delphi al framework destino (con un mínimo de 100 formularios)</li>
+                <li><strong>Precio por Formulario:</strong> USD 1,000 por formulario migrado de Delphi al framework objetivo (con un mínimo de 100 formularios)</li>
                 <li><strong>Adaptación Opcional a Diferente Stack Tecnológico (ej: Node + Angular):</strong> Tarifa única adicional de USD 18,000 (**)</li>
                 <li><strong>Consultoría Opcional / Tarifa de Desarrollo Personalizado por Hora:</strong> USD 90 por hora</li>
             </ul>
             <p>Las personalizaciones adicionales como integraciones de API, herramientas de documentación especializadas u otros requisitos únicos se cotizarán por separado según el esfuerzo estimado.</p>
-            <p>Estos precios asumen que el modelo de base de datos permanece igual y cualquier objeto de base de datos (como procedimientos almacenados) también permanece funcionando como parte de la aplicación migrada. Cualquier cambio adicional a estos elementos se cotizará por separado.</p>
-            <p><small>(*) Los precios indicados no incluyen los impuestos estatales o locales aplicables. El impuesto sobre las ventas se agregará en las jurisdicciones donde lo exija la ley. Todos esos impuestos se agregarán donde corresponda.</small></p>
-            <p><small>(**) Cualquier personalización de nuestro producto principal permanece como propiedad de BotMan LLC.</small></p>
+            <p>Estos precios asumen que el modelo de base de datos permanece igual y que cualquier objeto de base de datos (como procedimientos almacenados) también sigue funcionando como parte de la aplicación migrada. Cualquier cambio adicional a estos elementos se cotizará por separado.</p>
+            <p><small>(*) Los precios indicados no incluyen impuestos estatales o locales aplicables. Se añadirá el impuesto sobre las ventas en las jurisdicciones donde lo exija la ley. Todos estos impuestos se agregarán cuando corresponda.</small></p>
+            <p><small>(**) Cualquier personalización de nuestro producto principal sigue siendo propiedad de BotMan LLC.</small></p>
         </section>
 
         <section class="pricing-section">
             <h2>Responsabilidades del Cliente</h2>
-            <p>Para garantizar un proceso de migración fluido, requerimos que los clientes:</p>
+            <p>Para garantizar un proceso de migración sin problemas, requerimos que los clientes:</p>
             <ul>
-                <li>Describan claramente los estándares y preferencias tecnológicas, incluidas las convenciones de codificación, estructuras de carpetas, versiones de bibliotecas o cualquier otra guía relevante.</li>
+                <li>Describan claramente los estándares y preferencias tecnológicas, incluidas las convenciones de codificación, estructuras de carpetas, versiones de bibliotecas o cualquier otra pauta relevante. El código generado por Codacle se adherirá estrictamente a estos estándares.</li>
                 <li>Proporcionen acceso seguro a sus repositorios de código y bases de datos de prueba.</li>
-                <li>Especifiquen las preferencias de entrega.</li>
-                <li>En caso de que se requieran pruebas funcionales por nuestra parte, proporcionen descripciones detalladas de las pruebas requeridas para cada formulario, incluidos los datos de prueba disponibles y el acceso a un entorno de prueba adecuado.</li>
+                <li>Especifiquen preferencias de entrega. Por defecto, entregamos el código migrado directamente a sus repositorios, pero podemos adaptarnos a cualquier pipeline CI/CD o proceso de implementación que tenga, lo que puede influir en el precio general.</li>
+                <li>En caso de que requieran pruebas funcionales de nuestra parte, proporcionen descripciones detalladas de las pruebas requeridas para cada formulario, incluidos los datos de prueba disponibles y el acceso a un entorno de prueba adecuado.</li>
             </ul>
         </section>
 
-         <section class="pricing-section">
+        <section class="pricing-section">
             <h2>Garantía y Políticas</h2>
-            <p><strong>Prueba de Concepto (POC):</strong> No ofrecemos POCs de forma gratuita; sin embargo, proporcionamos una garantía de devolución de dinero de 60 días si la aplicación migrada no coincide con la funcionalidad exacta de la aplicación Delphi original.</p>
-             <p><strong>Funcionalidades Específicas de Escritorio:</strong> Las pantallas migradas replicarán de cerca la apariencia y funcionalidad de las pantallas originales, excepto los comportamientos específicos de escritorio que pueden requerir adaptación para entornos web (ej. interacción con disco local).</p>
+            <p><strong>Prueba de Concepto (POC):</strong> No ofrecemos POCs gratuitas; sin embargo, proporcionamos una garantía de devolución de dinero de 60 días si la aplicación migrada no coincide con la funcionalidad exacta de la aplicación Delphi original.</p>
+            <p><strong>Funcionalidades Específicas de Escritorio:</strong> Las pantallas migradas replicarán de cerca la apariencia y funcionalidad de las pantallas originales, excepto por los comportamientos específicos de escritorio que pueden requerir adaptación para entornos web. Por ejemplo, la interacción con el disco duro local del usuario o con cualquier otra aplicación instalada en la PC del usuario debe analizarse y podría implicar costos adicionales para diseñar e implementar una funcionalidad web equivalente.</p>
         </section>
 
-        <p>Para discutir cómo Codacle puede optimizar la modernización de su aplicación, contáctenos en <a href="mailto:info@botman-ai.com">info@botman-ai.com</a>.</p>
+        <section class="pricing-section">
+            <h2>Seguridad</h2>
+            <p>Todos nuestros procesos se ejecutan en redes y computadoras seguras. Su código fuente se almacenará en esas computadoras, así como en carpetas de Microsoft OneDrive durante la duración del proyecto. Posteriormente, todas las copias se eliminarán de nuestro almacenamiento.</p>
+            <p>Enviaremos su código a LLMs en la nube para su procesamiento y conversión. Nuestro uso de LLMs está restringido a APIs implementadas por Azure, AWS y Google. En otras palabras, no vamos directamente a OpenAI o Anthropic, sino que usamos las implementaciones de Azure y AWS. Por el momento, no utilizamos LLMs de código abierto instalados localmente (por ejemplo, en sus centros de datos), porque en nuestra experiencia no ofrecen suficiente inteligencia para este tipo de trabajo.</p>
+            <p>En cuanto a la autorización y autenticación, por defecto utilizamos su esquema existente. Por ejemplo, si tiene tablas con nombres de usuario, contraseñas y acceso permitido por usuario a ciertas funciones en sus sistemas, seguiremos usando esas tablas. Sin embargo, podemos integrarnos con otros métodos (como AD) o incluso crear nuevos desde cero para su proyecto, sujeto a costo adicional.</p>
+        </section>
 
+        <section class="pricing-section" id="faq">
+            <h2>Preguntas Frecuentes</h2>
+            
+            <h3>¿Podemos migrar a stacks diferentes de Spring Boot y React?</h3>
+            <p>Sí, podemos adaptar el objetivo de migración a su stack tecnológico deseado por un precio fijo adicional como se describe en la estructura de precios.</p>
+            
+            <h3>¿Qué sucede si se necesitan agregar funcionalidades adicionales durante la migración?</h3>
+            <p>Cualquier funcionalidad adicional o personalización fuera del alcance original se cotizará por separado según el esfuerzo estimado.</p>
+            
+            <h3>¿Mi código será replicado fuera de mi organización?</h3>
+            <p>Sí, parte de nuestro proceso es que necesitaremos una copia de su código para realizar la migración. Si tiene necesidades especiales con respecto a este punto, podemos revisarlas. Por ejemplo, podemos implementar nuestras herramientas en servidores o escritorios virtuales dentro de su red y ejecutar todos nuestros procesos desde allí, aunque requerirá esfuerzo y costo adicionales. Las llamadas a LLM necesarias para la comprensión y conversión del código siempre serán a través de proveedores en la nube (Google, Azure, AWS).</p>
+            
+            <h3>¿Pueden usar LLMs locales como LLaMa en lugar de ir a la nube?</h3>
+            <p>Actualmente no admitimos LLMs locales. La razón es que la calidad del código generado sigue siendo significativamente mejor cuando se utilizan LLMs de frontera en la nube.</p>
+            
+            <h3>¿Admiten pipelines de integración y despliegue continuos?</h3>
+            <p>Absolutamente. Nos adaptamos a sus pipelines y procesos existentes, entregando el código en consecuencia.</p>
+            
+            <h3>¿Qué sucede si nuestra aplicación tiene comportamientos específicos de escritorio complejos?</h3>
+            <p>Evaluaremos y propondremos las adaptaciones necesarias, comunicando claramente cualquier impacto en los precios o plazos de entrega.</p>
+            
+            <h3>¿Cuánto tiempo toma una migración típica?</h3>
+            <p>Los plazos varían según la complejidad y tamaño de la aplicación, pero generalmente puede esperar:</p>
+            <ul>
+                <li>6 semanas para la configuración</li>
+                <li>1 aplicación de tamaño promedio (10 pantallas, 10 tablas de base de datos) cada 3 días</li>
+                <li>La fecha de inicio del proyecto dependerá de nuestra carga de trabajo en ese momento, el tiempo de espera típico será entre 1 y 3 meses</li>
+            </ul>
+            <p>Es importante tener en cuenta que este marco de tiempo puede variar dependiendo de la disponibilidad del Cliente para proporcionar escenarios de prueba, datos de prueba, realizar sus propias pruebas funcionales, así como la velocidad de interacción que podamos tener desde el lado del Cliente en cualquier ajuste necesario. En otras palabras, esta es nuestra propia velocidad, pero podemos adaptarnos a la suya según sea necesario.</p>
+            
+            <h3>¿Podemos introducir mejoras funcionales en el software?</h3>
+            <p>No, nuestro proceso migra las funcionalidades exactamente como están hoy, aplicando la misma lógica de negocio. Para el usuario final, el aspecto y la sensación y los procesos seguirán siendo los mismos (aunque basados en web). Sin embargo, en el interior, la arquitectura se renovará totalmente y el código seguirá las mejores prácticas del cliente y de la industria. Si necesita mejorar la funcionalidad, nuestra recomendación es primero migrar el sistema tal como está y en una segunda fase, realizar los cambios necesarios. Podemos colaborar en esta segunda fase como una propuesta separada.</p>
+            
+            <h3>¿Pueden integrar el sistema migrado a fuentes externas no utilizadas por la versión actual, como portales API o aplicaciones web?</h3>
+            <p>No por defecto, pero podemos analizar el caso y posiblemente realizar la integración con costo adicional.</p>
+        </section>
+
+        <section class="pricing-section">
+            <h2>Próximos Pasos</h2>
+            <p>Contáctenos en <a href="mailto:info@botman-ai.com">info@botman-ai.com</a> para discutir cómo Codacle puede agilizar la modernización de su aplicación.</p>
+        </section>
     </main>
 
     <footer>
