@@ -1,0 +1,21 @@
+{
+  "name": "botman-ai-website",
+  "version": "1.0.0",
+  "description": "Static website for BotMan AI",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server public -p 8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "static",
+    "website",
+    "ai",
+    "botman"
+  ],
+  "author": "BotMan AI",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "http-server": "^14.1.1" 
+  }
+} 
